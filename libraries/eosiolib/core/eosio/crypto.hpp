@@ -28,6 +28,18 @@ namespace eosio {
     */
    using ecc_public_key = std::array<char, 33>;
 
+
+
+
+
+
+
+
+
+
+
+
+
    /**
     *  EOSIO WebAuthN public key
     *
@@ -147,6 +159,19 @@ namespace eosio {
     *  @ingroup signature
     */
    using ecc_signature = std::array<char, 65>;
+
+
+
+
+
+
+
+
+
+
+
+
+
 
    /**
     *  EOSIO WebAuthN signature
@@ -327,6 +352,8 @@ namespace eosio {
     */
    eosio::public_key recover_key( const eosio::checksum256& digest, const eosio::signature& sig );
 
+
+
    /**
     *  Tests a given public key with the recovered public key from digest and signature.
     *
@@ -336,4 +363,9 @@ namespace eosio {
     *  @param pubkey - Public key
     */
    void assert_recover_key( const eosio::checksum256& digest, const eosio::signature& sig, const eosio::public_key& pubkey );
+
+
+
+
+
 }

@@ -204,6 +204,10 @@ void ripemd160( const char* data, uint32_t length, struct capi_checksum160* hash
 __attribute__((eosio_wasm_import))
 int recover_key( const struct capi_checksum256* digest, const char* sig, size_t siglen, char* pub, size_t publen );
 
+
+
+
+
 /**
  *  Tests a given public key with the generated key from digest and the signature.
  *
@@ -231,6 +235,18 @@ int recover_key( const struct capi_checksum256* digest, const char* sig, size_t 
  */
 __attribute__((eosio_wasm_import))
 void assert_recover_key( const struct capi_checksum256* digest, const char* sig, size_t siglen, const char* pub, size_t publen );
+
+
+
+
+
+
+
+
+
+
+
+
 
 #ifdef __cplusplus
 }

@@ -467,7 +467,12 @@ struct generation_utils {
          {"capi_checksum512", "checksum512"},
          {"fixed_bytes_20", "checksum160"},
          {"fixed_bytes_32", "checksum256"},
-         {"fixed_bytes_64", "checksum512"}
+         {"fixed_bytes_64", "checksum512"},
+
+
+         {"capi_bls_public_key", "bls_public_key"},
+         {"capi_bls_signature", "bls_signature"}
+
       };
 
       auto ret = translation_table[t];
@@ -757,8 +762,8 @@ struct generation_utils {
          "checksum512",
          "public_key",
          "signature",
-         "public_key",
-         "signature",
+         "bls_public_key",
+         "bls_signature",
          "symbol",
          "symbol_code",
          "asset",
